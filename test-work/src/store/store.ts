@@ -5,8 +5,8 @@ import { setupListeners } from '@reduxjs/toolkit/query';
 export const store = configureStore({
     reducer: {
         [searchApi.reducerPath]: searchApi.reducer,
-    },
-    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(searchApi.middleware),
+    }, // Указываем редьюсер
+    middleware: (getDefaultMiddleware) => getDefaultMiddleware().concat(searchApi.middleware), // Указываем мидлвейр
 });
 
-setupListeners(store.dispatch);
+setupListeners(store.dispatch); // Устанавливаем слушатель на стор

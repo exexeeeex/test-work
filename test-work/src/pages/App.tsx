@@ -91,13 +91,6 @@ const App = () => {
         <>
             <Header onChange={handleValueChange} onClick={handleSearch} searchValue={searchValue} />
             <main className={styles.place}>
-                {/* <TableContainer component={Paper}>
-                    <Table sx={{minWidth: '1200px'}}>
-                        <TableRow>
-
-                        </TableRow>
-                    </Table>
-                </TableContainer> */}
                 {data?.items && data.items.length > 1 ? (
                     <>
                         <DataGrid
