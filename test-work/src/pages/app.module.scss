@@ -1,0 +1,10 @@
+.place {
+    max-height: 900px;
+    display: flex;
+    align-items: flex-start;
+    &__info {
+        width: 500px;
+        height: 91vh;
+        background-color: #f2f2f2;
+    }
+}
